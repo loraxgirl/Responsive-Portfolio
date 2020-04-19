@@ -128,48 +128,74 @@ input[type=text], select, textarea {
   background-color    : #191970;
   }
 
-  * PORTFOLIO CSS */
-  .p-container {
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    position: relative;     
-    padding: 2px 20px 10px 20px;
-  }
-
+  /* PORTFOLIO CSS */
   .thumbnail {
     position: relative;
     }
-    
-    .caption {
-    background-color: #17a2b8;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    width: 20%;
-    opacity: 0.8;
-    transform: translateY(-70%);
-    }
 
-    .responsive {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-gap: 50px;
-      grid-template-rows: auto auto auto;
-      grid-template-columns: auto auto auto;
-      background-color: white;
+    .p-container {
       width: 80%;
-      margin: auto;
-      position: relative;  
-      padding: 2px 20px 10px 20px;
+      max-width: 960px;
+      margin: 0 auto;
+      clear: both;
     }
-
+    
+    .p-section {
+      float: left;
+      width: 100%;
+      max-width: 960px;
+      padding: 20px;
+      margin: 0 0 40px;
+      background: #ffffff;
+    }
+    
+    .port {
+      position: relative;
+      float: left;
+      width: 274px;
+      margin: 20px 0 25px;
+      overflow: auto;
+    }
+    
+    .port:nth-child(even) {
+      margin-right: 40px;
+    }
+    
+    .port img {
+      width: 100%;
+      border: 0 none;
+      opacity: 0.8;
+    }
+    
+    .responsive {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .port h3 {
+      position: absolute;
+      bottom: 20px;
+      width: 80%;
+      padding: 15px;
+      margin-bottom: 0;
+      font-weight: 300;
+      line-height: 30px;
+      color: #ffffff;
+      opacity: 60%;
+      text-align: center;
+      background: #4aaaa5;
+      border-bottom: 0;
+    }
+    
+    .auth-image {
+      float: left;
+      width: 200px;
+      height: auto;
+      margin-top: 10px;
+      margin-right: 25px;
+    }
+    
+    
 
 /* Style the footer */
 .footer {
@@ -189,7 +215,6 @@ input[type=text], select, textarea {
 
 /* Extra small devices (phones) */
 @media only screen and (max-width: 640px) {
-    
   .nav > .nav-links {
       width: 60%;
       height: 50px;
@@ -197,14 +222,76 @@ input[type=text], select, textarea {
       top: 50px;
       left: 0px;
     }
+    .p-section {
+      justify-content: center;
+      margin-top: 50px;
+      background-color: teal;
+    }
+    #port-container {
+      max-width: 486px;
+    }
+    .port {
+      width: 100%;
+    }
 }
 
 /* Medium devices (tablets) */
 @media only screen and (max-width: 768px) {
-  
+  .p-container {
+    max-width: 700px;
+    justify-content: center;
+  }
+  .p-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 0 40px;
+    justify-content: center;
+  }
+  .port {
+    padding: 2px 2px 2px 2px;    
+  }
 }
 
 /* Large devices (laptops/desktops) */
 @media only screen and (max-width: 980px) {
+  .p-container {
+    width: 900px;
+    margin: auto;
+  }
+
+  .p-section {
+    max-width: 756px;
+    position: relative;
+    left: 72px;
+    bottom: 10px;
+  }
+
+  .port {
+    width: 230px;  
+    position: relative;
+    float: center;
+    padding: 0px 0px 1px 0px;
+    overflow: auto;
+  }
   
+  .port img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .port h3 {
+    bottom: 20px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 0;
+  }
+
+  .responsive {
+    width: 180px;
+    height: 180px;
+  }
+
 }
