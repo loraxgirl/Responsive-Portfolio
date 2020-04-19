@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Raleway', sans-serif;
+  background-image: url('../images/asanoha-400px.png');
+}
+
+.nav {
+  height: 50px;
+  width: 80%;
+  background-color: #ffffff;
+  position: relative;
+  margin: auto;
+}
+
+.nav-title {
+    background-color: #17a2b8;
+    color           : white;
+    font-family     : 'Courgette', cursive;
+    font-size       : 160%;
+    height          : 50px;
+}
+
+.nav-links {
+    color           : #17a2b8;
+    font-family     : 'Courgette', cursive;
+    font-size       : 140%;
+}
+
+.nav-header {
+    vertical-align  : middle;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  margin:   auto;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: #D3D3D3;
+}
+
+.container {
+    width: 80%;
+    background-color: #ffffff;
+    position: relative;
+    margin: auto;
+    padding: 2px 20px 10px 20px;
+}
+
+h4 {
+    color         :#17a2b8;
+    font-family   : 'Courgette', cursive;
+    font-size     : 150%;
+  }
+
+  h6 {
+      font-size: 90%;
+      color: #696969;
+  }
+  
+  .responsive {
+    max-width: 80%;
+    height: auto;
+  }
+
+/* LINK CSS */
+/* unvisited link */
+a:link { color: #17a2b8;
+}
+
+/* visited link */
+a:visited { color: #808080;
+}
+
+/* mouse over link */
+a:hover { color: #0099CC;
+  transition: .4s ease-in-out color;
+}
+
+/* selected link */
+a:active { color: #191970;
+}
+
+/* CONTACT CSS */
+/* Style inputs */
+input[type=text], select, textarea {
+  width               : 100%;
+  padding             : 12px;
+  border              : 1px solid #ccc;
+  margin-top          : 6px;
+  margin-bottom       : 16px;
+  resize              : vertical;
+  }
+  
+  input[type=submit] {
+  background-color    : #17a2b8;
+  color               : white;
+  padding             : 12px 20px;
+  border              : none;
+  cursor              : pointer;
+  }
+  
+  input[type=submit]:hover {
+  background-color    : #191970;
+  }
+
+  * PORTFOLIO CSS */
+  .p-container {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    position: relative;     
+    padding: 2px 20px 10px 20px;
+  }
+
+  .thumbnail {
+    position: relative;
+    }
+    
+    .caption {
+    background-color: #17a2b8;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 20%;
+    opacity: 0.8;
+    transform: translateY(-70%);
+    }
+
+    .responsive {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: auto auto auto;
+      background-color: white;
+      width: 80%;
+      margin: auto;
+      position: relative;  
+      padding: 2px 20px 10px 20px;
+    }
+
+
+/* Style the footer */
+.footer {
+    background-color    : #666666;
+    color               : white;
+    padding             : 10px;
+    text-align          : center;
+    font-size           : 14px;
+    width               : 100%;
+    margin              : auto;
+    position            : fixed;
+    bottom              : 0;
+    left                : 0;
+    border-top          : 8px solid #4aaaa5;
+    vertical-align      : bottom;
+  }
+
+/* Extra small devices (phones) */
+@media only screen and (max-width: 640px) {
+    
+  .nav > .nav-links {
+      width: 60%;
+      height: 50px;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+  
+}
+
+/* Large devices (laptops/desktops) */
+@media only screen and (max-width: 980px) {
+  
+}
